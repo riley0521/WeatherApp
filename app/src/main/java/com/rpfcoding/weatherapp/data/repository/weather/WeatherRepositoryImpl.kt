@@ -6,8 +6,9 @@ import com.rpfcoding.weatherapp.domain.repository.weather.WeatherRepository
 import com.rpfcoding.weatherapp.domain.util.Resource
 import com.rpfcoding.weatherapp.domain.weather.WeatherInfo
 import java.lang.Exception
+import javax.inject.Inject
 
-class WeatherRepositoryImpl(
+class WeatherRepositoryImpl @Inject constructor(
     private val api: WeatherApi
 ) : WeatherRepository {
 

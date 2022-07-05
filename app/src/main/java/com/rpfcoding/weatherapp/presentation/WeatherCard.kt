@@ -85,7 +85,7 @@ fun WeatherCard(
                         textStyle = TextStyle(color = Color.White)
                     )
                     WeatherDataDisplay(
-                        value = data.pressure.roundToInt(),
+                        value = data.windSpeed.roundToInt(),
                         unit = "km/h",
                         icon = ImageVector.vectorResource(id = R.drawable.ic_wind),
                         iconTint = Color.White,
